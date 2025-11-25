@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Neighbor Totoro</title>
+
+    <!--Links to the rsc folder of css and js-->
+    <link rel="stylesheet" href="rsc/css/bootstrap.min.css" />
+    <script src="rsc/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <!--makes background black-->
+<body class="bg-black">
+  <!--Header-->
+    <nav class="navbar">
+      <div class="container-fluid">
+        <!--Logo-->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="media/my-neighbor-totoro-2732x2732-10718.png"
+            alt="Logo"
+            width="75"
+            height="50"
+            class="me-2"
+          />
+        </a>
+        <!--Title-->
+        <span
+          class="navbar fw-bold mb-0 h1"
+          style="color: rgba(0, 89, 255, 0.997)"
+          ><b>My Neighbor Totoro</b></span
+        >
+        <!--Links to other pages-->
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><b>HOME</b></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="characters.html"><b>CHARACTERS</b></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="product.html"><b>PRODUCTS</b></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="product.html"><b>CINEMA</b></a>
+          </li>
+
+          <li>
+            <ul class="nav nav-tabs">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  ><b>MOVIES</b></a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Anime</a></li>
+                  <li><a class="dropdown-item" href="#">Cartoons</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">History</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"><b>ABOUT</b></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar">
+      <div class="container-fluid">
+        <ul class="nav nav-tabs">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+              ><b>Anime Movies</b></a
+            >
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Genre</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Romance</a></li>
+              <li><a class="dropdown-item" href="#">Sports</a></li>
+              <li><a class="dropdown-item" href="#">Slice of life</a></li>
+              <li><a class="dropdown-item" href="#">Fantasy</a></li>
+              <li><a class="dropdown-item" href="#">School</a></li>
+              <li><a class="dropdown-item" href="#">Horror</a></li>
+              <li><a class="dropdown-item" href="#">Comedy</a></li>
+              <li><a class="dropdown-item" href="#">Shonen</a></li>
+              <li><a class="dropdown-item" href="#">Shojo</a></li>
+              <li><a class="dropdown-item" href="#">Isekai</a></li>
+              <li><a class="dropdown-item" href="#">Mecha</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!--Search-->
+        <div class="input-group mb-3" style="width: 300px">
+          <span class="input-group-text bg-white">
+            <i class="bi bi-search"></i>
+          </span>
+          <input type="text" class="form-control" placeholder="Search" />
+        </div>
+      </div>
+    </nav>
+
+    <!--Carousel-->
+    <div class="position-relative">
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="media/totoro6.jpg"
+              class="img-fluid rounded-4 shadow-lg"
+              style="max-height: 600px; object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="position-absolute bottom-0 start-0 w-100 p-0">
+        <div class="container-fluid py-3 bg-black bg-opacity-75">
+          <div class="row align-items-center">
+            <div class="col-7 d-flex align-items-center">
+              <div
+                class="d-flex flex-column align-items-center justify-content-center me-3 border border-3 border-success rounded-circle bg-dark"
+                style="width: 60px; height: 60px"
+              >
+                <span class="text-white fw-bold fs-6">81%</span>
+              </div>
+
+              <div class="text-white me-4">
+                <div class="fs-6 fw-bold">User</div>
+                <div class="fs-4 fw-bolder">Score</div>
+              </div>
+
+              <span class="me-3">
+                <span class="fs-3" role="img">😍</span>
+                <span class="fs-3" role="img">🤩</span>
+                <span class="fs-3" role="img">😢</span>
+              </span>
+            </div>
+
+            <!--buttons in carousel-->
+            <div class="col-5 d-flex justify-content-end">
+              <button
+                class="btn btn-dark rounded-pill me-2 text-success fw-bold"
+              >
+                What's your Vibe? ⓘ
+              </button>
+              <!--trailer links to youtube-->
+              <a href="https://www.youtube.com/watch?v=92a7Hj0ijLs" 
+                target="_blank"
+                class="btn btn-secondary rounded-pill">
+                <i class="bi bi-play-fill me-1"></i> Play Trailer
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid py-2 bg-black bg-opacity-75">
+          <div class="row">
+            <div class="col-12 d-flex ps-3">
+              <button
+                class="btn btn-secondary me-2 rounded-circle d-flex align-items-center justify-content-center"
+                style="width: 35px; height: 35px"
+              >
+                <i class="bi bi-list"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-door-open" viewBox="0 0 16 16">
+                <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1"/>
+                <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117M11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5M4 1.934V15h6V1.077z"/>
+                </svg></i>
+              </button>
+              <button
+                class="btn btn-secondary me-2 rounded-circle d-flex align-items-center justify-content-center"
+                style="width: 35px; height: 35px"
+              >
+                <i class="bi bi-heart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+               <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+               </svg></i>
+              </button>
+              <button
+                class="btn btn-secondary me-2 rounded-circle d-flex align-items-center justify-content-center"
+                style="width: 35px; height: 35px"
+              >
+                <i class="bi bi-bookmark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+                <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"/>
+                </svg></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Movie Description-->
+    <section class="bg-black text-white py-5 py-lg-7">
+      <div class="container">
+        <div class="row align-items-center">
+          <!--left text-->
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <p class="text-white">
+              Title: <i>My Neighbor Totoro</i><br>
+              Director: Hayao Miyazaki<br>
+              Studio: Studio Ghibli<br>
+              Release Year: 1988<br>
+              Genre: Fantasy, Animation, Family<br />
+              Country: Japan<br>
+              <hr>
+              Description:<br>
+              In the endearing animated movie My Neighbor Totoro, two 
+              Young sisters who relocate to a rural area and come across 
+              a serene forest spirits, including the endearing Totoro.  
+              The film is praised globally for its themes of childhood, 
+              innocence, and aesthetic beauty, nature, and the imagination.
+            </p>
+          </div>
+
+          <!--right image-->
+          <div class="col-lg-6 text-center">
+            <img
+              src="media/totoro7.webp"
+              class="img-fluid rounded-4 shadow-lg"
+              style="max-height: 520px; object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Movie Sypnosis-->
+    <section class="bg-black text-white py-5 py-lg-7">
+      <div class="container">
+        <div class="row align-items-center">
+          <!--left image-->
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <h1 class="fw-bold display-4 mb-4" style="line-height: 1.1">
+              Sypnosis
+            </h1>
+            <img
+              src="media/totoro3.jpg"
+              class="img-fluid rounded-4 shadow-lg"
+              style="max-height: 520px; object-fit: cover"
+            />
+            
+          </div>
+
+          <!--right text-->
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <p class="text-white">
+              My Neighbor Totoro is a gentle and sweet animated movie by Studio
+              Ghibli that tells a story of two little girls Satsuki and Mei who
+              are taken by their father to the countryside while their mother
+              stays in a hospital nearby for treatment. The daughters, while
+              playing and discovering the nature around them, become acquainted
+              with the forest spirits, and the most famous one, the big and
+              adorable Totoro, becomes their friend and magical companion. The
+              girls encounter amazement, tenderness, and creativity during the
+              uncertain period of their lives through the adventures with Totoro
+              and other fantastical creatures. The film combines daily life and
+              magic in a marvellous way and stresses the very themes of purity
+              of childhood, strong family bonds, and nature's soothing effect.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Movie Highlights-->
+      <section class="bg-black text-white py-5 py-lg-7">
+      <div class="container">
+        <div class="row align-items-center">
+          <!--left text-->
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <h1 class="fw-bold display-4 mb-4" style="line-height: 1.1">
+              Movie Highlights
+            </h1>
+
+            <p class="text-white">
+              ✦ Moving to the Countryside<br>
+              Sisters Satsuki and Mei move to the countryside with their father 
+              to be nearer their mother in hospital. Their experiences with magic 
+              play out against the tranquil countryside.<br>
+              ✦ Discovering the Dust Sprites<br>
+              The forgotten house reveals the soot sprites, minor spirits of dust 
+              that indicate a higher plane of existence than average.<br>
+              ✦ Mei Meets Totoro<br>
+              The little girl follows the tiny spirits into the forest and meets Totoro, 
+              a huge, cuddly but gruff forest king who naps in a massive camphor tree.<br>
+              ✦ The Iconic Bus Stop Scene<br>
+              At a rainy night, Satsuki and Mei are waiting for their father. And there 
+              standing next to them is Totoro, and he’s only carrying a single leaf as 
+              an umbrella. Satsuki lends her umbrella—this moment is now one of the most 
+              beloved sequences in animation.<br>
+              ✦ The Catbus<br> 
+              Totoro calls the Catbus, a fantastic cat-themed mode of transportation that 
+              speeds through the air over the countryside.<br>
+              ✦ Finding Mei<br>
+              The heart-tuggingest episode: Mei runs away because she is upset about their mother. 
+              Satsuki, in tears, pleads for Totoro’s aid, and the Catbus locates Mei bringing the 
+              sisters back together.<br>
+              ✦ Quiet Ending Filled with Hope<br>
+              The girls have left the hospital, seen it from across a distance, and learned that 
+              their mother is well on her way to recovery; they emerge from the film shining 
+              brightly with hope.
+            </p>
+          </div>
+
+          <!--right image-->
+          <div class="col-lg-6 text-center">
+            <img
+              src="media/totoro2.jpg"
+              class="img-fluid rounded-4 shadow-lg"
+              style="max-height: 520px; object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Voice Actors/Cast-->
+        <div class="container my-5">
+    <h2 class="mb-4 text-white fw-bold">Top Billed Cast</h2>
+    <div class="d-flex flex-nowrap overflow-x-auto pb-3">
+
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/norikohidaka_satsuki.webp" class="card-img-top" alt="Noriko Hidaka" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Noriko Hidaka</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">Satsuki Kusakabe (voice)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/chikasakamoto_mei.webp" class="card-img-top" alt="Chika Sakamoto" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Chika Sakamoto</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">Mei Kusakabe (voice)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/hitsoshitakagaki_totoro.webp" class="card-img-top" alt="Hitsoshi Takagi Totoro" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Hitsoshi Takagi</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">Totoro (voice)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/shigesatoitoi_tatsuo.webp" class="card-img-top" alt="Shigetsato Itoi" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Shigetsato Itoi</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">Tatsou Kusakabe (voice)</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/sumishimamoto_yasuko.webp" class="card-img-top" alt="Sumi Shimamoto" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Sumi Shimamoto</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">Yasuko Kusakabe (voice)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/taniekitabayashi_granny.webp" class="card-img-top" alt="Tanie Kitabayashi" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Tanie Kitabayashi</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">KGranny (voice)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/toshiyukiamagasa_kanta.webp" class="card-img-top" alt="Toshiyuki Amagasa" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Toshiyuki Amagasa</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">Kanta Ogaki (voice)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/yukomaruyama_kantasmother.webp" class="card-img-top" alt="Masashi Hirose" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Yuko Maruyaman</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">Kanta's Mother (voice)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/masashihirose_kantasfather.webp" class="card-img-top" alt="Masashi Hirose" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Masashi Hirose</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">Kanta's Father (voice)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/reikosuzuki_kantasaunt.webp" class="card-img-top" alt="Reiko Suzuki" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Reikp Suzuki</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">Kanta's Aunt (voice)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/machikowashio_teacher.webp" class="card-img-top" alt="Machiko Washio" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Machiko Washio</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">Teacher (voice)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/naokitatsuta_catbus.webp" class="card-img-top" alt="Naoki Tatsuta" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Naoki Tatsuta</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">Catbus (voice)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/tomohironishimura_postman.webp" class="card-img-top" alt="Tomohiro Nishimura" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Tomohiro Nishimura</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">Postman (voice)</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/chiekoujiro_michiko.webp" class="card-img-top" alt="Chie Koujiro" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Chie Koujiro</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">Michiko (voice)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/yukomizutani_ryoko.webp" class="card-img-top" alt="Yuko Mizutani" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Yuko Mizutani</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">Ryoko (voice)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/shigeruchiba_additional.webp" class="card-img-top" alt="Shigeru Chiba" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Shigeru Chiba</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">(Additional voices)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/tarako_additional.webp" class="card-img-top" alt="Tarako" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Tarako</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">(Additional voices)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/mitsukoishida.jpg" class="card-img-top" alt="Mitsuko Ishida" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Mitsuko Ishida</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">(Additional voices)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/daikinakamura_additional.webp" class="card-img-top" alt="Daiki Nakamura" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Daiki Nakamura</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">(Additional voices)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/akikohiramatsu_additional.webp" class="card-img-top" alt="Akiko Hiramatsu" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Akiko Hiramatsu</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">(Additional voices)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-3" style="min-width: 150px; max-width: 150px;">
+            <div class="card shadow-sm border-0">
+                <img src="media/ikueotani_additional.webp" class="card-img-top" alt="Ikue Otani" style="height: 150px; object-fit: cover;">
+                <div class="card-body p-2">
+                    <p class="card-title fw-bold mb-0 text-truncate">Ikue Otani</p>
+                    <p class="card-text text-muted small mb-0 text-truncate">(Additional voices)</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+    </div>
+    
+<!--Available Cinema-->
+<div class="page-section active m-5">
+  <div class="container-fluid px-5 pt-5">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="row section-header">
+          <div class="col-lg-8">
+            <h1 class="text-light text-danger">Available Cinema</h1>
+          </div>
+          <div class="col-lg-3">
+            <img src="media/SM-Cinema-logo-lock-up-blue-Copy.png" class="hof-profile" style="width: 200px;">
+          </div>
+        </div>
+
+        <div class="pillar-card">
+          <div class="row text-light mb-4  fw-bold">
+            <div class="col-lg-3"><strong>✦SM Aura Premier</strong></div>
+            <div class="col-lg-3"><strong>✦SM Mall of Asia</strong></div>
+            <div class="col-lg-3"><strong>✦SM City Cebu</strong></div>
+            <div class="col-lg-3"><strong>✦SM City Butuan</strong></div>
+          </div>
+
+          <!--Image-->
+          <div>
+            <img src="media/totoro1.jpg"
+                 class="img-fluid rounded-4 shadow-lg mt-5"
+                 style="max-height: 520px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+
+      <!--Crew/Production Team-->
+      <div class="col-lg-4">
+        <div class="bg-dark p-4 border border-secondary" style="top: 100px;">
+
+          <h1 class="text-start text-uppercase mb-4 text-white">Crew</h>
+
+          <h3 class="text-center text-uppercase mb-4 mt-4 text-white"></h3>
+          <div class="overflow-auto text-center text-light" style="max-height: 80vh;">
+            <!--Art Team-->
+            <h3 class="text-center text-uppercase mb-4 mt-4 text-white">Art</h3>
+            <div><strong>Kazuo Oga</strong><br><span class="small">Art Director</span></div>
+            <div><strong>Hidetoshi Kaneko</strong><br><span class="small">Background Design</span></div>
+            <div><strong>Keiko Tamura</strong><br><span class="small">Background Design</span></div>
+            <div><strong>Makoto Hiraishi</strong><br><span class="small">Background Design</span></div>
+            <div><strong>Masaki Yoshizaki</strong><br><span class="small">Background Design</span></div>
+            <div><strong>Satoshi Matsuoka</strong><br><span class="small">Background Design</span></div>
+            <div><strong>Shinji Kimura</strong><br><span class="small">Background Design</span></div>
+            <div><strong>Yoji Takeshige</strong><br><span class="small">Background Design</span></div>
+            <div><strong>Yuko Matsuura</strong><br><span class="small">Background Design</span></div>
+            <div><strong>Akira Yamakawa</strong><br><span class="small">Background Design</span></div>
+            <div><strong>Kiyoko Sugawara</strong><br><span class="small">Background Design</span></div>
+            <div><strong>Kiyomi Ota</strong><br><span class="small">Background Design</span></div>
+            <div><strong>Nobuhiro Otsuka</strong><br><span class="small">Background Design</span></div>
+            <div><strong>Sadahiko Tanaka</strong><br><span class="small">Background Design</span></div>
+            <div><strong>Toshito Nozaki</strong><br><span class="small">Background Design</span></div>
+            <div><strong>Tsuyoshi Matsumuro</strong><br><span class="small">Background Design</span></div>
+            <div><strong>Michiyo Yasuda</strong><br><span class="small">Background Design</span></div>
+
+            <!--Camera Team-->
+            <h3 class="text-center text-uppercase mb-4 mt-4 text-white">Camera</h3>
+            <div><strong>Hisao Shirai</strong><br><span class="small">Director of Photography</span></div>
+            
+            <!--Editing Team-->
+            <h3 class="text-center text-uppercase mb-4 mt-4 text-white">Editing</h3>
+            <div><strong>Takeshi Seyama</strong><br><span class="small">Editor</span></div>
+        
+            <!--Production Team-->
+            <h3 class="text-center text-uppercase mb-4 mt-4 text-white">Production</h3>
+            <div><strong>Yasuyoshi Tokuma</strong><br><span class="small">Executive Producer</span></div>
+            <div><strong>Eiko Tanaka</strong><br><span class="small">Line Producer</span></div>
+            <div><strong>Tooru Hara</strong><br><span class="small">Producer</span></div>
+            <div><strong>Toshio Suzuki</strong><br><span class="small">Producer</span></div>
+
+            <!--Sound Team-->
+            <h3 class="text-center text-uppercase mb-4 mt-4 text-white">Sound</h3>
+            <div><strong>Takashi Watanabe</strong><br><span class="small">Music Producer</span></div>
+            <div><strong>Joe Hisaishi</strong><br><span class="small">Original Music Composer</span></div>
+
+            <!--Visual Effect Team-->
+            <h3 class="text-center text-uppercase mb-4 mt-4 text-white">Visual Effects</h3>
+            <div><strong>Hideko Tagawa</strong><br><span class="small">Animation</span></div>
+            <div><strong>Katsuya Kondon</strong><br><span class="small">Animation</span></div>
+            <div><strong>Keiichiro Hattori</strong><br><span class="small">Animation</span></div>
+            <div><strong>Komasa</strong><br><span class="small">Animation</span></div>
+            <div><strong>Makiko Futaki</strong><br><span class="small">Animation</span></div>
+            <div><strong>Makoto Tanaka</strong><br><span class="small">Animation</span></div>
+            <div><strong>Masaaki Endou</strong><br><span class="small">Animation</span></div>
+            <div><strong>Masako Shinohara</strong><br><span class="small">Animation</span></div>
+            <div><strong>Tensai Okamura</strong><br><span class="small">Animation</span></div>
+            <div><strong>Toshio Kawaguchi</strong><br><span class="small">Animation</span></div>
+            <div><strong>Tsukasa Tannai</strong><br><span class="small">Background Design</span></div>
+            <div><strong>Yoshinori Kanada</strong><br><span class="small">Animation</span></div>
+            <div><strong>Hitomi Tateno</strong><br><span class="small">Animation Manager</span></div>
+            <div><strong>Yasuko Tachiki</strong><br><span class="small">Animation Manager</span></div>
+            <div><strong>Yoshiharu Sato</strong><br><span class="small">Animation Supervisor</span></div>
+            <div><strong>Hiroomi Yamakawa</strong><br><span class="small">Key Animation</span></div>
+            <div><strong>Masaki Kudo</strong><br><span class="small">Key Animation</span></div>
+            <div><strong>Shinji Otsuka</strong><br><span class="small">Key Animation</span></div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<hr width="100%;" color="white" size="5">
+      <div class="container">
+          <!--Directing-->
+      </div>
+      <div class="card m-auto mb-3" style="max-width: 18rem;">
+              <div class="card-body text-center" style="box-shadow: 0px 0px 30px rgb(255, 255, 255);">
+                <img
+                    src="media/authorhayako.webp"
+                    class="img-fluid rounded-6 shadow-lg"
+                    style="max-height: 520px; object-fit: cover"
+                  />
+                <h3 class="card-title">Director & Writer</h3>
+                <h4 class="fw-bold">Hayao Miyazaki</4>
+                <h5 class="  mb-0">Assistant Director</h5>
+                <h5 class="fw-bold ">Tetsuya Endo</h5>
+                          
+              </div>
+          </div>
+
+          <!--Footer-->
+          <footer class="py-3 my-4 bg-black text-white">
+            <div class="container">
+              <div class="row align-items-center">
+              <!--left-->
+              <div class="col-4 text-start" style="color: rgba(0, 89, 255, 0.997)">
+                <img src="media/my-neighbor-totoro-2732x2732-10718.png" alt="Logo" width="75" height="40">
+                <span
+                  class="navbar fw-bold mb-0 h1"
+                  style="color: rgba(0, 89, 255, 0.997)"
+                  ><b>My Neighbor Totoro</b></span
+              >
+            </div>
+
+            <!--Center-->
+            <div class="col-4 text-center" style="color: rgba(0, 89, 255, 0.997)">
+              <p class="fw-bold">© Developed by<br>
+              BELEN, Mariane<br>
+              BERMUDEZ, John Harley<br>
+              CABEL, Santchay<br>
+              CORDOVA, Johnrel </p>
+            </div>
+
+            <!-- Right-->
+
+            <div class="col-4 text-end" style="color: rgba(0, 89, 255, 0.997)">
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"><b>HOME</b></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="characters.html"><b>CHARACTERS</b></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="product.html"><b>PRODUCTS</b></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="product.html"><b>CINEMA</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><b>MOVIES</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><b>ABOUT</b></a>
+                </li>
+              </ul>
+            </div>
+              </div>
+            </div>
+          </footer>
+    
+
+  </body>
+</html>
